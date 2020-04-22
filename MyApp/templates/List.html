@@ -1,0 +1,22 @@
+<h1 style ='background-color:red;'><marquee direction="leftpyt">present the list</marquee></h1>
+<h3>{%for F in List%}
+       {{F.Name}}  <br>
+    {%endfor%}</h3>
+<h3>{%for F in List%}
+       {{F.Email}}<br>
+    {%endfor%}</h3>
+<h3>{%for F in List%}:
+    <a href = "{% url 'ite' F.Number %}" > {{F.Number}}<br>
+    {%endfor%}</h3>
+
+<a href = "http://127.0.0.1:8000/admin/">admin</a><br>
+<a href = "http://127.0.0.1:8000/">name</a><br>
+<a href = "http://127.0.0.1:8000/Places/">Places</a><br>
+<a href = "http://127.0.0.1:8000/Advantages/">Advantages</a><br>
+<a href = "http://127.0.0.1:8000/Disadvantages/">Disadvantages</a><br>
+<a href = "http://127.0.0.1:8000/courses/">Courses</a><br>
+<a href = "http://127.0.0.1:8000/intro/">intro</a><br>
+<a href = "http://127.0.0.1:8000/motivation/">motivation</a><br>
+<a href = "http://127.0.0.1:8000/Students/">Students</a><br>
+<a href = "http://127.0.0.1:8000/College/">College</a><br>
+<a href = "{% url 'sub' %}">Subject</a><br>

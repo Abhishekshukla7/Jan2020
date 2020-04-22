@@ -1,0 +1,19 @@
+<center><h1> Add Number</h1> </center>
+<form method="POST" action="">
+    {% csrf_token %}
+    institute<br>
+    {% for i in institutes %}
+    <input type="radio" name="office" value="{{ i.id}}"></input>
+    {%endfor%}
+
+
+    <br>
+    Name:<input name ="name" type="text" placeholder="name" required/><br><br>
+     Email:<input name ="email" type="email" placeholder="email" required/><br><br>
+    Address:<input name ="address" type="text" placeholder="address" required/><br><br>
+     Mobile:<input name ="Moblie" type="number" placeholder="Mobile"  required/><br><br>
+
+    <input type ="submit" Value="Add_Number">
+
+</form>
+</center>

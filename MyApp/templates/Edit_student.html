@@ -1,0 +1,12 @@
+<center><h1> Students</h1> </center>
+<form method="POST" action="">
+    {% csrf_token %}
+    Name:<input name ="name" type="text" placeholder="name" value="{{data.Name}}" required/><br><br>
+     Email:<input name ="email" type="email" placeholder="email" value="{{data.Email}}"required/><br><br>
+    Address:<input name ="address" type="text" placeholder="address" value="{{data.Address}}"required/><br><br>
+     Mobile:<input name ="Moblie" type="number" placeholder="Mobile"  value="{{data.Number}}"required/><br><br>
+
+    <input type ="submit" Value="Edit_student">
+
+</form>
+</center>

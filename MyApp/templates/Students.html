@@ -1,0 +1,33 @@
+<marquee direction= 'up'><center><h1>Introdution of Students:</h1></center></marquee>
+<h3>{%for s in students%}:
+    {{s.Name}}  <a href = "{% url 'Detail' s.id %}">Details</a><br>
+    {%endfor%}</h3>
+<h3>{%for s in students%}:
+       {{s.Email}}<br>
+    {%endfor%}</h3>
+<h3>{%for s in students%}:
+       <a href = "{% url 'ite' s.Number %}" >{{s.Number}}</a><br>
+    {%endfor%}</h3>
+<h3>{%for s in students%}:
+       {{s.Address}}<br>
+    {%endfor%}</h3>
+<h3>{%for s in students%}:
+       {{s.College}} <br>
+    {%endfor%}</h3>
+{% load static %}
+<img src= "{% static  'pic1.jpg'  %}"><img><br>
+
+
+<a href = "http://127.0.0.1:8000/admin/">admin</a><br>
+<a href = "http://127.0.0.1:8000/">name</a><br>
+<a href = "http://127.0.0.1:8000/Places/">Places</a><br>
+<a href = "http://127.0.0.1:8000/Advantages/">Advantages</a><br>
+<a href = "http://127.0.0.1:8000/Disadvantages/">Disadvantages</a><br>
+<a href = "http://127.0.0.1:8000/courses/">Courses</a><br>
+<a href = "http://127.0.0.1:8000/intro/">intro</a><br>
+<a href = "http://127.0.0.1:8000/motivation/">motivation</a><br>
+<a href = "http://127.0.0.1:8000/index/">index</a><br>
+<a href = "http://127.0.0.1:8000/College/">College</a><br>
+<a href = "{% url 'sub' %}">Subject</a><br>
+<a href = "http://127.0.0.1:8000/Freind/">Friend</a><br>
+
