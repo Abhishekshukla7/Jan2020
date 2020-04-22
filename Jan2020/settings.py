@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'b12rhk*25j25jrhzth04zv#p*1&@70wb19n^$@gz7#9#694doc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ip_addresses()
 
@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Jan2020.urls'
+ROOT_URLCONF = 'Abhishekshukla7.github.io/Jan2020'
 
 TEMPLATES = [
     {
@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Jan2020.wsgi.application'
+WSGI_APPLICATION = 'Abhishekshukla7.github.io/Jan2020/wsgi.application'
 
 
 # Database
